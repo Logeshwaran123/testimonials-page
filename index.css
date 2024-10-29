@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Typography */
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+
+  /* Weights */
+  --lgt: 300;
+  --med: 500;
+  --bol: 700;
+
+  /* Colors */
+  --white: #fff;
+  --drk-blue: hsl(240, 38%, 20%);
+  --gry-blue: hsl(240, 18%, 77%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--lgt);
+}
+
+.main-content {
+  flex-basis: 590px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+}
+
+.quote {
+  position: absolute;
+  top: -60px;
+  left: 100px;
+  font-weight: var(--lgt);
+}
+
+.profiles-preview {
+  position: relative;
+  left: -75px;
+}
+
+.pattern-bg {
+  top: 0;
+  right: 0;
+  transform: translateX(90px) translateY(-63px);
+  position: absolute;
+  z-index: -1;
+}
+
+.controls {
+  position: relative;
+  left: 60px;
+  top: -50px;
+  display: flex;
+  width: fit-content;
+  column-gap: 0.5em;
+  background-color: var(--white);
+  box-shadow: 0 8px 24px var(--gry-blue);
+  border-radius: 2rem;
+}
+
+.btn {
+  all: unset;
+  font-size: 16px;
+  display: block;
+  padding: 1.5em;
+  background-color: var(--white);
+}
+
+.btn-prev {
+  border-radius: 2rem 0 0 2rem;
+}
+.btn-next {
+  border-radius: 0 2rem 2rem 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* PROFILE DETAILS */
+.profile {
+  font-size: 20px;
+  display: flex;
+  column-gap: 1em;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.profile-name {
+  color: var(--drk-blue);
+  font-weight: var(--bol);
+}
+
+.profile-job {
+  color: var(--gry-blue);
+  font-weight: var(--med);
+}

@@ -1,0 +1,58 @@
+/* MOBILE SCREEN */
+@media (max-width: 64rem) {
+  html {
+    font-size: 24px;
+  }
+
+  /* Testimonial Container */
+  .testimonial {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 16rem;
+  }
+
+  .profile-image,
+  .pattern-bg {
+    transform: none;
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 86%;
+  }
+
+  .quote {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -12px);
+    width: 2rem;
+  }
+
+  .pattern-bg {
+    width: 100%;
+  }
+
+  .profiles-preview {
+    left: 0;
+  }
+
+  .main-content {
+    flex: 0 1 auto;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .controls {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-64%);
+  }
+
+  .btn {
+    padding: 1em;
+  }
+}
